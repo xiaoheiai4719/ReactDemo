@@ -7,7 +7,7 @@
 //
 
 #import "DetailViewController.h"
-
+#import <RCTRootView.h>
 @interface DetailViewController ()
 
 @end
@@ -34,8 +34,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
+//    // Do any additional setup after loading the view, typically from a nib.
+//    [self configureView];
+    
+    NSURL *jsCodeLocation = [NSURL
+                             URLWithString:@"http://10.2.52.140:8081/index.ios.bundle?platform=ios&dev=true"];
+    RCTRootView *rootView =
+    [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
+                         moduleName        : @"ReactDemo"
+                         initialProperties :nil
+                          launchOptions    : nil];
+    self.view = rootView;
+    
 }
 
 - (void)didReceiveMemoryWarning {

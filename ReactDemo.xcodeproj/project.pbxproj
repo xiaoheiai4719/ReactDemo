@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C814DF40F9BF0F8A4939C150 /* libPods-ReactDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1421731B7C1470667C5EF33D /* libPods-ReactDemo.a */; };
 		F5A659181D78294000A5727B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A659171D78294000A5727B /* main.m */; };
 		F5A6591B1D78294000A5727B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6591A1D78294000A5727B /* AppDelegate.m */; };
 		F5A6591E1D78294000A5727B /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6591D1D78294000A5727B /* MasterViewController.m */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1421731B7C1470667C5EF33D /* libPods-ReactDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15DA6D0E037F66293199817F /* Pods-ReactDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactDemo/Pods-ReactDemo.release.xcconfig"; sourceTree = "<group>"; };
+		438648907F2F0BDA8B01D3C0 /* Pods-ReactDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactDemo/Pods-ReactDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F5A659131D78294000A5727B /* ReactDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A659171D78294000A5727B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5A659191D78294000A5727B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C814DF40F9BF0F8A4939C150 /* libPods-ReactDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85FE67A830EBB497CA2B8D85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				438648907F2F0BDA8B01D3C0 /* Pods-ReactDemo.debug.xcconfig */,
+				15DA6D0E037F66293199817F /* Pods-ReactDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D45543F52FEF5A6B719467A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1421731B7C1470667C5EF33D /* libPods-ReactDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5A6590A1D78294000A5727B = {
 			isa = PBXGroup;
 			children = (
 				F5A659151D78294000A5727B /* ReactDemo */,
 				F5A659141D78294000A5727B /* Products */,
+				85FE67A830EBB497CA2B8D85 /* Pods */,
+				D45543F52FEF5A6B719467A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5A6592D1D78294000A5727B /* Build configuration list for PBXNativeTarget "ReactDemo" */;
 			buildPhases = (
+				72B6384BE1A0564B846EACB6 /* 📦 Check Pods Manifest.lock */,
 				F5A6590F1D78294000A5727B /* Sources */,
 				F5A659101D78294000A5727B /* Frameworks */,
 				F5A659111D78294000A5727B /* Resources */,
+				A090338F34EEE737399D0627 /* 📦 Embed Pods Frameworks */,
+				852E00F1E2E8EA327E19E5AD /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72B6384BE1A0564B846EACB6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		852E00F1E2E8EA327E19E5AD /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactDemo/Pods-ReactDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A090338F34EEE737399D0627 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactDemo/Pods-ReactDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5A6590F1D78294000A5727B /* Sources */ = {
@@ -221,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -259,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -268,8 +343,13 @@
 		};
 		F5A6592E1D78294000A5727B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438648907F2F0BDA8B01D3C0 /* Pods-ReactDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ReactDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BigCatloveFish.ReactDemo;
@@ -279,8 +359,13 @@
 		};
 		F5A6592F1D78294000A5727B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15DA6D0E037F66293199817F /* Pods-ReactDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ReactDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BigCatloveFish.ReactDemo;
@@ -307,6 +392,7 @@
 				F5A6592F1D78294000A5727B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
