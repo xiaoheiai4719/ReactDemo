@@ -44,7 +44,8 @@
                          moduleName        : @"ReactDemo"
                          initialProperties :nil
                           launchOptions    : nil];
-    self.view = rootView;
+    rootView.frame = CGRectMake(0, 0, 320, 568);
+    [self.view addSubview: rootView];
     
 }
 
