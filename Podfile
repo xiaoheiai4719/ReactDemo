@@ -7,6 +7,7 @@ target 'ReactDemo' do
     'Core',
     'RCTText',
     'RCTWebSocket', # needed for debugging
+    'RCTImage',
     # Add any other subspecs you want to use in your project
   ]
 

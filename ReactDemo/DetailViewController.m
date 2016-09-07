@@ -8,7 +8,11 @@
 
 #import "DetailViewController.h"
 #import <RCTRootView.h>
-@interface DetailViewController ()
+#import <RCTRootViewDelegate.h>
+@interface DetailViewController ()<RCTRootViewDelegate>{
+    RCTRootView *rootView_;
+
+}
 
 @end
 
@@ -38,20 +42,31 @@
 //    [self configureView];
     
     NSURL *jsCodeLocation = [NSURL
-                             URLWithString:@"http://10.2.52.140:8081/index.ios.bundle?platform=ios&dev=true"];
-    RCTRootView *rootView =
+                             URLWithString:@"http://10.2.52.143:8081/index.ios.bundle?platform=ios&dev=true"];
+   rootView_=
     [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
                          moduleName        : @"ReactDemo"
                          initialProperties :nil
                           launchOptions    : nil];
-    rootView.frame = CGRectMake(0, 0, 320, 568);
-    [self.view addSubview: rootView];
-    
+    rootView_.delegate = self;
+    rootView_.sizeFlexibility = RCTRootViewSizeFlexibilityHeight;
+
+    rootView_.frame = CGRectMake(0, 64, 320, 568);
+    [self.view  addSubview:rootView_];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)rootViewDidChangeIntrinsicSize:(RCTRootView *)rootView{
+    CGRect newFrame = rootView.frame;
+    newFrame.size = rootView.intrinsicSize;
+    
+    rootView.frame = newFrame;
+    
+    
+}
+
 
 @end
