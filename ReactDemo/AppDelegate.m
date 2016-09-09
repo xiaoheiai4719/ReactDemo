@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import "RCTBridge.h"
+#import "RCTBundleURLProvider.h"
+#import "RCTJavaScriptLoader.h"
+#import "RCTRootView.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -18,12 +22,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

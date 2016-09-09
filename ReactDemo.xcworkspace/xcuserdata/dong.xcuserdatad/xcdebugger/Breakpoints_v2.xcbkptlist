@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ReactDemo/DetailViewController.m"
-            timestampString = "494772353.911569"
+            filePath = "node_modules/react-native/React/Executors/RCTJSCExecutor.mm"
+            timestampString = "494913177.581873"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "616"
+            endingLineNumber = "616"
+            landmarkName = "-callFunctionOnModule:method:arguments:callback:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ReactDemo/DetailViewController.m"
-            timestampString = "494772353.911569"
+            filePath = "node_modules/react-native/React/Base/RCTBundleURLProvider.m"
+            timestampString = "495013053.003161"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "-rootViewDidChangeIntrinsicSize:"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "-jsBundleURLForBundleRoot:fallbackResource:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "node_modules/react-native/React/Base/RCTBundleURLProvider.m"
+            timestampString = "495013081.074543"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "+jsBundleURLForBundleRoot:packagerHost:enableDev:enableMinification:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "node_modules/react-native/React/Base/RCTBundleURLProvider.m"
+            timestampString = "495013429.362316"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "-packagerServerHost"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

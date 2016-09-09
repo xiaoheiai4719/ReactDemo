@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text,View,StyleSheet,ActivityIndicator,TextInput,TouchableHighlight} from 'react-native';
 import TuJiaTextInput from './TuJiaTextInput';
+import TuJiaRoomRate from './TuJiaRoomRate';
 
 class ReactDemo extends Component {
   constructor(props) {
@@ -26,11 +27,18 @@ class ReactDemo extends Component {
        onPress={this.textOnPress}>
        <Text>{display}</Text>
        </TouchableHighlight>
+
        <TuJiaTextInput name='这是一个测试的例子' unit='套' currentNumber='789'></TuJiaTextInput>
        </View>
     );
   }
 }
+
+
+
+
+
+
 
 
 

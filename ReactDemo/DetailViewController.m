@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import <RCTRootView.h>
 #import <RCTRootViewDelegate.h>
+#import "TuJiaRoomRateViewController.h"
 @interface DetailViewController ()<RCTRootViewDelegate>{
     RCTRootView *rootView_;
 
@@ -53,6 +54,21 @@
 
     rootView_.frame = CGRectMake(0, 64, 320, 568);
     [self.view  addSubview:rootView_];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 100, 100);
+    btn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(pushRoomeRate) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+}
+- (void)pushRoomeRate{
+    
+    TuJiaRoomRateViewController *vc = [[TuJiaRoomRateViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {

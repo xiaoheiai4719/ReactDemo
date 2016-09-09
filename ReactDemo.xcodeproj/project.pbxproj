@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C814DF40F9BF0F8A4939C150 /* libPods-ReactDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1421731B7C1470667C5EF33D /* libPods-ReactDemo.a */; };
+		F50B66AB1D7FF85000134235 /* TuJiaRoomRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50B66AA1D7FF85000134235 /* TuJiaRoomRateViewController.m */; };
 		F5A659181D78294000A5727B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A659171D78294000A5727B /* main.m */; };
 		F5A6591B1D78294000A5727B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6591A1D78294000A5727B /* AppDelegate.m */; };
 		F5A6591E1D78294000A5727B /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6591D1D78294000A5727B /* MasterViewController.m */; };
@@ -21,6 +22,8 @@
 		1421731B7C1470667C5EF33D /* libPods-ReactDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DA6D0E037F66293199817F /* Pods-ReactDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactDemo/Pods-ReactDemo.release.xcconfig"; sourceTree = "<group>"; };
 		438648907F2F0BDA8B01D3C0 /* Pods-ReactDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactDemo/Pods-ReactDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F50B66A91D7FF85000134235 /* TuJiaRoomRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuJiaRoomRateViewController.h; sourceTree = "<group>"; };
+		F50B66AA1D7FF85000134235 /* TuJiaRoomRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuJiaRoomRateViewController.m; sourceTree = "<group>"; };
 		F5A659131D78294000A5727B /* ReactDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A659171D78294000A5727B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5A659191D78294000A5727B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				F5A6591D1D78294000A5727B /* MasterViewController.m */,
 				F5A6591F1D78294000A5727B /* DetailViewController.h */,
 				F5A659201D78294000A5727B /* DetailViewController.m */,
+				F50B66A91D7FF85000134235 /* TuJiaRoomRateViewController.h */,
+				F50B66AA1D7FF85000134235 /* TuJiaRoomRateViewController.m */,
 				F5A659221D78294000A5727B /* Main.storyboard */,
 				F5A659251D78294000A5727B /* Assets.xcassets */,
 				F5A659271D78294000A5727B /* LaunchScreen.storyboard */,
@@ -230,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50B66AB1D7FF85000134235 /* TuJiaRoomRateViewController.m in Sources */,
 				F5A6591B1D78294000A5727B /* AppDelegate.m in Sources */,
 				F5A6591E1D78294000A5727B /* MasterViewController.m in Sources */,
 				F5A659181D78294000A5727B /* main.m in Sources */,

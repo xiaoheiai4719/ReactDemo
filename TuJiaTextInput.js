@@ -43,19 +43,20 @@ const styles = StyleSheet.create({
     borderColor:'#444444',
   },
   title:{
-    position :'absolute',
-    // left:30,//上边距离屏幕上侧30单
-    // alignSelf:'center',
+    position :'relative',
+    left:10,//
+    alignSelf:'center',
     fontSize:20,
   },
   btnSize:{
     width:50,
     height:50,
-    flexDirection:'row',
+    justifyContent:'center',
+    alignItems: 'center',
   },
   canUseBtn:{
-    justifyContent:'center',
-   alignSelf:'center',
+   // alignSelf:'center',
+
  },
  unitSize:{
     fontSize:15,
